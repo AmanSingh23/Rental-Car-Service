@@ -1,0 +1,48 @@
+<body>
+    <app-navbar></app-navbar>
+    <div class="about-page">
+        <div class="about-des">
+            <div class="about-des-1">
+                <div class="container">
+                    <div class="about-title">
+                        <h3>Contact</h3>
+                        <p><a href="/">Home</a> / Contact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="contact-div">
+            <div class="contact-div-text">
+                <h2>Need additional information?</h2>
+                <p>A multifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience.</p>
+                <a href="/"><fa-icon [icon]="faPhone"></fa-icon>&nbsp; (123) 456-7869</a>
+                <a href="/"><fa-icon [icon]="faEnvelope"></fa-icon>&nbsp; rentacar@carrent.com</a>
+                <a href="/"><fa-icon [icon]="faMapMarker"></fa-icon>&nbsp; Bangalore, India</a>
+                <!-- <a href="/"><i class="fa-solid fa-location-dot"></i>&nbsp; Belgrade, Serbia</a> -->
+            </div>
+            <div class="contact-div-form">
+                <form class="form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                    <label>Full name<b>*</b></label>
+                    <input type="text" placeholder="E.g 'John Wick' " formControlName="name">
+                    <label>Email<b>*</b></label>
+                    <input type="email" placeholder="youremail@mail.com" formControlName="email" [ngClass]="{ 'active': !isEmailValid }">
+                    <div *ngIf="!isEmailValid">
+                        Email is invalid
+                    </div>
+                    <label>Full name<b>*</b></label>
+                    <textarea placeholder="Write here.." formControlName="tellus" [ngClass]="{ 'active': !isTellUsValid }"></textarea>
+                    <div *ngIf="!isTellUsValid">
+                        Email is invalid
+                    </div>
+                    <button type="submit">
+                        <fa-icon [icon]="faEnvelopeOpen"></fa-icon>&nbsp; Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <app-bookbanner></app-bookbanner>
+    <app-footer></app-footer>
+</body>

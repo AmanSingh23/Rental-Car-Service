@@ -1,0 +1,104 @@
+.container{
+    margin: 0 auto!important;
+    max-width: 133rem!important;
+    padding: 0 2.5rem!important;
+
+
+    @media only screen and (max-width: 1500px) {
+        margin-top: 5rem !important;
+    }
+    .bg-shape {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    .car-container {
+        align-items: center;
+        display: flex;
+        height: 95vh;
+        position: relative;
+        width: 100%;
+        .textbox-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 35rem;
+            z-index: 3;
+            h4 {
+                color: #010103;
+                font-family: Rubik,sans-serif;
+                font-size: 1.6rem;
+            }
+            h1{
+                color: #010103;
+                font-family: Rubik,sans-serif;
+                font-size: 3.2rem;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 2.3rem;
+                margin-top: 1rem;
+                span {
+                   color: #e39e5a
+                }
+            }
+            p{
+                color: #706f7b;
+                font-family: Rubik,sans-serif;
+                font-size: 1rem;
+                line-height: 1.6rem;
+                margin-bottom: 4rem;
+                margin-top: 0;
+                width: 93%;
+            }
+            .buttons-container {
+                display: flex;
+                font-family: Rubik,sans-serif;
+                font-size: 1.6rem;
+                gap: 2rem;
+                fa-icon {
+                    font-size: 20px;
+                }
+                .a {
+                    color: #fff;
+                    font-weight: 700;
+                }
+                .buttons_book-ride {
+                    background-color: #e39e5a;
+                    border: 2px solid #e39e5a;
+                    border-radius: 0.3rem;
+                    box-shadow: 0 10px 15px 0 #db7531;
+                    padding: 0.8rem 2rem;
+                    transition: all .3s;
+                    text-decoration: none;
+                    color: #fff;
+                }
+                .buttons_book-ride:hover {
+                    color: #fff;
+                    background-color: #db7531;
+                    border: 2px solid #db7531;
+                }
+                .buttons_learn-more {
+                    background-color: black;
+                    border: 2px solid black;
+                    border-radius: 0.3rem;
+                    box-shadow: 0 10px 15px 0 black;
+                    padding: 0.8rem 2rem;
+                    transition: all .3s;
+                    text-decoration: none;
+                    color: #fff;
+                }
+                .buttons_learn-more:hover {
+                    color: black;
+                    background-color: #fff;
+                    border: 2px solid black;
+                }
+            } 
+        }
+        .bg-carimg {
+            position: absolute;
+            z-index: 2;
+            right: 0px;
+            width: 57%;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.scroll-up {
+    align-items: center;
+    background-color: #db7531;
+    border: 3px solid #fff;
+    bottom: 1rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: .8rem;
+    height: .8rem;
+    justify-content: center;
+    padding: .8rem;
+    position: fixed;
+    right: 2rem;
+    text-align: center;
+    width: 1.5rem;
+    z-index: 20;
+}
+.show-scroll {
+    display: flex;
+}

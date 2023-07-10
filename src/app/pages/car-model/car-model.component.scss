@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    .about-page {
+        .about-des {
+            background-image: url(../../../assets/logo/heroes-bg.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 35rem;
+            position: relative;
+            width: 100%;
+            .about-des-1 {
+                background-color: hsla(0,0%,100%,.92);
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                .container{
+                    margin: 0 auto!important;
+                    max-width: 133rem!important;
+                    padding: 0 2.5rem!important;
+                    .about-title {
+                        color: #010103;
+                        display: flex;
+                        flex-direction: column;
+                        height: 35rem;
+                        justify-content: center;
+                        position: relative;
+                        width: 100%;
+                        z-index: 3;
+                        font-weight: 600;
+                        h3 {
+                            font-size: 3rem;
+                            margin-bottom: 0.5rem;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        p{
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            font-family: 'Poppins', sans-serif;
+                            a {
+                                color: #010103;
+                                text-decoration: none;
+                                transition: all .2s;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    .container {
+        margin: 0 auto!important;
+        max-width: 133rem!important;
+        padding: 0 2.5rem!important;
+        .model-div {
+            grid-gap: 3rem;
+            align-items: center;
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            margin: 0 auto;
+            padding: 10rem 0;
+            text-align: center;
+            width: 110rem;
+            .model-card {
+                border: 1px solid #d5d5d5;
+                border-radius: 0.3rem;
+                display: flex;
+                flex-direction: column;
+                width: 35rem;
+                .box_img {
+                    border-radius: 0.3rem;
+                    height: auto;
+                    width: 100%;
+                    img {
+                        height: 27rem;
+                        width: 100%;
+                    }
+                }
+                .model-img-des {
+                    color: #010103;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2rem 3rem;
+                    .model-price-name {
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

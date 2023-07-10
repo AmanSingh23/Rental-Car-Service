@@ -1,0 +1,36 @@
+<div class="pick-section">
+    <div class="pick-section-container">
+        <div class="pick-section-box">
+            <div class="pick-section-title">
+                <h3>Vehicle Models</h3>
+                <h2>Our rental fleet</h2>
+                <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
+            </div>
+            <div class="pick-section-carcontent">
+                <div class="select-car">
+                    <button [attr.id]="'button-' + i"class="button" (click)="onClick($event)" *ngFor="let button of buttons; let i = index" [class.clicked]="button === activeButton">{{ button }}</button>
+                </div>
+                <div class="car-info">
+                    <div class="car-box">
+                        <img [src]="selectedModel.img" alt="car_img" style="display: block;">
+                    </div>
+                    <div class="car-des">
+                        <div class="des-price">
+                            <span>${{selectedModel.price}}</span>/ rent per day
+                        </div>
+                        <div class="des-tabel">
+                            <div class="pick-description-table-col"><span>Model</span><span>{{this.selectedModel.model}}</span></div>
+                            <div class="pick-description-table-col"><span>Mark</span><span>{{this.selectedModel.mark}}</span></div>
+                            <div class="pick-description-table-col"><span>Year</span><span>{{this.selectedModel.year}}</span></div>
+                            <div class="pick-description-table-col"><span>Doors</span><span>{{this.selectedModel.doors}}</span></div>
+                            <div class="pick-description-table-col"><span>AC</span><span>{{this.selectedModel.air}}</span></div>
+                            <div class="pick-description-table-col"><span>Transmission</span><span>{{this.selectedModel.transmission}}</span></div>
+                            <div class="pick-description-table-col"><span>Fuel</span><span>{{this.selectedModel.fuel}}</span></div>
+                        </div>
+                        <a class="cta-btn" href="#booking-section">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

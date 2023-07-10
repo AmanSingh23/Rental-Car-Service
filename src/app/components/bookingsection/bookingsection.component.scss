@@ -1,0 +1,104 @@
+.booking-section {
+    position: relative;
+    width: 99%;
+    padding-left: 1rem;
+    .booking-container {
+        margin: 0 auto!important;
+        max-width: 133rem!important;
+        padding: 0 2.5rem!important;
+        .book-content {
+            margin: 0 auto 10rem;
+            .book-content__box{
+                background-color: #fff;
+                background-image: url(../../../assets/logo/book-bg-6f629a1041e9fd9c6685.png);
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+                box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+                color: #fff;
+                color: #010103;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                //padding: 4rem 4.5rem 5rem 5.5rem;
+                position: relative;
+                z-index: 4;
+                width: 94%;
+                padding: 2rem;
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 2.7rem;
+                    font-family: Poppins,sans-serif;
+                }
+                .box-form {
+                    grid-gap: 2rem;
+                    display: grid;
+                    gap: 2rem;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto auto auto;
+                    font-family: Rubik,sans-serif;
+                    .box-form__car-type{
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            font-size: 1.3rem;
+                            margin-bottom: 1rem;
+                            font-weight: 600;
+                        }
+                        select {
+                            border: 1px solid #ccd7e6;
+                            border-radius: 3px;
+                            color: #ababab;
+                            font-family: Rubik,sans-serif;
+                            font-size: 14px;
+                            font-weight: 400;
+                            outline: none;
+                            padding: 0.9rem 0.6rem;
+                            font-size: 15px;
+                        }
+                    }
+                    .box-form__car-time {
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            font-size: 1.3rem;
+                            margin-bottom: 1rem;
+                            font-weight: 600;
+                        }
+                        input {
+                            border: 1px solid #ccd7e6;
+                            border-radius: 3px;
+                            color: #ababab;
+                            outline: none;
+                            padding: 0.9rem 0.6rem;
+                            font-size: 15px;
+                        }
+                    }
+                    button {
+                        align-self: self-end;
+                        background-color: #e39e5a;
+                        border: none;
+                        box-shadow: 0 10px 15px #db7531;
+                        color: #fff;
+                        cursor: pointer;
+                        font-family: Rubik,sans-serif;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        height: -moz-fit-content;
+                        height: -webkit-fit-content;
+                        height: fit-content;
+                        padding: 0.9rem;
+                        transition: all .3s;
+                    }
+                    button:hover {
+                        color: #fff;
+                        background-color: #db7531;
+                        border: none solid #db7531;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.faq-section {
+    background-image: url(../../../assets/logo/faqcarimage.png);
+    background-position: 0 70%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    .faq-container {
+        margin: 0 auto!important;
+        max-width: 133rem!important;
+        padding: 0 2.5rem!important;
+        .faq-content {
+            display: flex;
+            flex-direction: column;
+            .faq-title{
+                line-height: 1.5;
+                margin: 0 auto;
+                max-width: 50rem;
+                text-align: center;
+                h5{
+                    font-size: 1.8rem;
+                    margin-bottom: 0;
+                }
+                h2 {
+                    font-size: 2.8rem;
+                    margin-bottom: 1.7rem;
+                    margin-top: 0;
+                }
+                p {
+                    color: #706f7b;
+                    font-size: 1.2rem;
+                    margin-top: 0;
+                }
+            }
+            .faq-all-questions {
+                align-items: center;
+                margin-top: 5rem !important;
+                margin: 0 18rem;
+                .faq-box {
+                    background-color: #fff;
+                    box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
+                    color: #010103;
+                    cursor: pointer;
+                    width: 100%;
+                    .faq-box-question {
+                        align-items: center;
+                        box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0rem 4.5rem;
+                        // font-size: 1.2rem;
+                        transition: .4s ease;
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                        }
+                        i {
+                            font-size: 2rem;
+                        }
+                    }
+                    .active-question {
+                        background-color: #e39e5a;
+                        box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+                        color: #fff;
+                    }
+                    .faq-box-answer {
+                        color: #706f7b;
+                        font-family: Rubik,Rubik,sans-serif;
+                        font-size: 1rem;
+                        line-height: 1.7;
+                        max-height: 0;
+                        overflow: hidden;
+                        padding: 0 4.5rem;
+                        transition: .4s ease;
+                    }
+                    .active-answer {
+                        max-height: 20rem;
+                        padding: 2rem 5rem;
+                        transition: .4s ease;
+                    }
+                }
+            }
+            
+        }
+    }
+}

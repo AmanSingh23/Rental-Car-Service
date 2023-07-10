@@ -1,0 +1,56 @@
+
+body {
+    margin: 0;
+    .about-page {
+        .about-des {
+            background-image: url(../../../assets/logo/heroes-bg.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 35rem;
+            position: relative;
+            width: 100%;
+            .about-des-1 {
+                background-color: hsla(0,0%,100%,.92);
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                .container{
+                    margin: 0 auto!important;
+                    max-width: 133rem!important;
+                    padding: 0 2.5rem!important;
+                    .about-title {
+                        color: #010103;
+                        display: flex;
+                        flex-direction: column;
+                        height: 35rem;
+                        justify-content: center;
+                        position: relative;
+                        width: 100%;
+                        z-index: 3;
+                        font-weight: 600;
+                        h3 {
+                            font-size: 3rem;
+                            margin-bottom: 0.5rem;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        p{
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            font-family: 'Poppins', sans-serif;
+                            a {
+                                color: #010103;
+                                text-decoration: none;
+                                transition: all .2s;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

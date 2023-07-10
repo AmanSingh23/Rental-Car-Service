@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    .about-page {
+        .about-des {
+            background-image: url(../../../assets/logo/heroes-bg.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 35rem;
+            position: relative;
+            width: 100%;
+            .about-des-1 {
+                background-color: hsla(0,0%,100%,.92);
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                .container{
+                    margin: 0 auto!important;
+                    max-width: 133rem!important;
+                    padding: 0 2.5rem!important;
+                    .about-title {
+                        color: #010103;
+                        display: flex;
+                        flex-direction: column;
+                        height: 35rem;
+                        justify-content: center;
+                        position: relative;
+                        width: 100%;
+                        z-index: 3;
+                        font-weight: 600;
+                        h3 {
+                            font-size: 3rem;
+                            margin-bottom: 0.5rem;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        p{
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            font-family: 'Poppins', sans-serif;
+                            a {
+                                color: #010103;
+                                text-decoration: none;
+                                transition: all .2s;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    .container {
+        margin: 0 auto!important;
+        max-width: 133rem!important;
+        padding: 0 2.5rem!important;
+        .contact-div {
+            background-image: url(../../../assets/logo/contactMap.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: auto;
+            color: #010103;
+            display: grid;
+            gap: 3rem;
+            margin: 0 auto;
+            padding: 10rem 3rem;
+            grid-template-columns: 1fr 1fr;
+            .contact-div-text {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                max-width: 41rem;
+                h2 {
+                    font-size: 3.3rem;
+                    line-height: 1.3;
+                    margin-bottom: 0rem;
+                    font-family: Rubik,sans-serif;
+                    margin-top: 0;
+                }
+                p {
+                    color: #706f7b;
+                    font-family: Rubik,sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.6;
+                    margin-bottom: 2rem;
+                }
+                a {
+                    font-size: 1.3rem;
+                    color: #010103;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                    text-decoration: none;
+                    transition: all 0.2s;
+                    font-family: Rubik,sans-serif;
+                    letter-spacing: 2px;
+                }
+                a:hover {
+                    color: #e39e5a;
+                }
+                
+            }
+            .contact-div-form {
+                display: flex;
+                flex-direction: column;
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                        font-family: 'Rubik', sans-serif;
+                        b {
+                            color: #ff4d30;
+                        }
+                    }
+                    input {
+                        background-color: #f2f2f2;
+                        border: none;
+                        font-size: 1.2rem;
+                        outline: none;
+                        padding: 28px 30px;
+                        font-family: 'Rubik', sans-serif;
+                        letter-spacing: 3px;
+                        margin-bottom: 2rem;
+                    }
+                    textarea {
+                        height: 14rem;
+                        margin-bottom: 2.5rem;
+                        background-color: #f2f2f2;
+                        border: none;
+                        font-size: 1.2rem;
+                        outline: none;
+                        padding: 19px 30px;
+                    }
+                    .active {
+                        border: 2px solid #ff4d30;
+                    }
+                    button {
+                        background-color: #e39e5a;
+                        border: 2px solid #e39e5a;
+                        border-radius: 0.3rem;
+                        box-shadow: 0 10px 15px 0 rgba(227,158,90,255);
+                        color: white;
+                        font-family: 'Rubik', sans-serif;
+                        font-size: 1.2rem;
+                        padding: 28px 48px;
+                        cursor: pointer;
+                        font-weight: 600;
+                        transition: all 0.3s;
+                    }
+                    button:hover {
+                        box-shadow: 0 10px 15px 0 #e39e5a;
+                        background-color: #db7531;
+                    }
+                    div {
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                        margin-bottom: 3rem;
+                        font-family: 'Rubik', sans-serif;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

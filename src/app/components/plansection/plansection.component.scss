@@ -1,0 +1,49 @@
+.plan-section {
+    background-color: white;
+    padding: 4rem 0rem;
+    .plan-container{
+        margin: 0 auto!important;
+        max-width: 133rem!important;
+        padding: 0 2.5rem!important;
+        .plan-container-title {
+            color: #010103;
+            margin: 0 auto;
+            text-align: center;
+            h3 {
+                font-family: Rubik,sans-serif;
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+            h2 {
+                font-family: Rubik,sans-serif;
+                font-size: 4.2rem;
+                margin: 1.3rem 0 3rem;
+            }
+        }
+        .plan-container-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            margin-top: 3.7rem;
+            padding: 0 3rem;
+            .plan-container-singlebox {
+                padding: 1rem 6rem;
+                text-align: center;
+                img {
+                    height: auto;
+                    width: 13rem;
+                }
+                h3 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    color: #706f7b;
+                    font-family: Rubik,sans-serif;
+                    font-size: 1rem;
+                    line-height: 1.43;
+                }
+            }
+        }
+    }
+}
